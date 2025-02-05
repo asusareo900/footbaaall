@@ -13,7 +13,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Field3, function (sprite, otherS
     game.setGameOverMessage(false, "OH WELL...")
     game.gameOver(false)
 })
-sprites.onOverlap(SpriteKind.Player, SpriteKind.Feild2, function (sprite, otherSprite) {
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Feild2, function (sprite2, otherSprite2) {
     game.setGameOverEffect(true, effects.confetti)
     game.setGameOverMessage(true, "NICE SHOT!")
     game.gameOver(true)
@@ -40,9 +40,9 @@ mySprite4.setPosition(55, 60)
 mySprite = sprites.create(assets.image`Goal1`, SpriteKind.Goal)
 mySprite.setPosition(148, 59)
 let mySprite6 = sprites.create(assets.image`footballPlayer1`, SpriteKind.Player)
-controller.moveSprite(mySprite6, 0, 100)
+controller.moveSprite(mySprite6, 41, 41)
 mySprite6.setStayInScreen(true)
-mySprite6.setPosition(40, 56)
+mySprite6.setPosition(21, 56)
 game.setDialogCursor(assets.image`myImage0`)
 game.splash("Press \"B\" to kick ball")
 let kick = 1
